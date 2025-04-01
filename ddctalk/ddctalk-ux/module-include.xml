@@ -1,0 +1,8 @@
+<types>
+  <type name="DummyWidget" class="com.ddctalk.ddctalk.ux.BDummyWidget">
+    <agent>
+      <on type="baja:Component" />
+    </agent>
+  </type>
+  <type name="DdctalkJsBuild" class="com.ddctalk.ddctalk.ux.BDdctalkJsBuild" />
+</types>

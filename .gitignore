@@ -1,0 +1,7 @@
+.gradle/
+.idea/
+ddctalk/ddctalk-rt/build/
+ddctalk/ddctalk-rt/bin/
+ddctalk/ddctalk-ux/build/
+ddctalk/ddctalk-ux/bin/
+ddctalk/ddctalk-ux/nodeModules/
