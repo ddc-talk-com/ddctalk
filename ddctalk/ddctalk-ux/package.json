@@ -26,5 +26,10 @@
     "eslint-plugin-react": "^7.20.0",
     "grunt-contrib-less": "^2.0.0"
   },
+  "eslintConfig": {
+
+    "extends": "./node_modules/grunt-niagara/.eslintrc.json"
+
+  },
   "keywords": []
 }

@@ -1,7 +1,7 @@
 
 define([
   'nmodule/js/rc/jasmine/promiseUtils',
-  'nmodule/ddctalkTest/rc/spec/DummyWidgetSpec' ], function (
+  'nmodule/ddctalkTest/rc/spec/SliderWidgetSpec' ], function (
   promiseUtils) {
   'use strict';
   beforeEach(function () {

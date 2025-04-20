@@ -3,4 +3,5 @@
   <type class="com.ddctalk.ddctalk.ux.BDummyWidget" name="DummyWidget"/>
   <type class="com.ddctalk.ddctalk.ux.BDdctalkJsBuild" name="DdctalkJsBuild"/>
   <type class="com.ddctalk.ddctalk.ux.BDdctalkCssResource" name="DdctalkCssResource"/>
+  <type class="com.ddctalk.ddctalk.ux.BSliderWidget" name="SliderWidget"/>
 </types>

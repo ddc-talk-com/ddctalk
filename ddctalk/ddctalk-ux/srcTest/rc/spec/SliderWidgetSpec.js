@@ -1,18 +1,18 @@
 
 define([
-  'nmodule/ddctalk/rc/DummyWidget',
+  'nmodule/ddctalk/rc/SliderWidget/SliderWidget',
   'jquery' ], function (
-  DummyWidget,
+  SliderWidget,
   $) {
 
   'use strict';
 
-  describe('nmodule/ddctalk/rc/DummyWidget', () => {
+  describe('nmodule/ddctalk/rc/SliderWidget/SliderWidget', () => {
     var widget,
         elem;
 
     beforeEach(() => {
-      widget = new DummyWidget();
+      widget = new SliderWidget();
       elem = $('<div/>');
     });
 
