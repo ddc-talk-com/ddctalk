@@ -5,7 +5,6 @@
  * @module nmodule/ddctalk/rc/DummyWidget
  */
 define([ 'bajaux/Widget', 'jquery', 'Promise' ], function (Widget, $, Promise) {
-
   'use strict';
 
   /**
