@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module vendor="ddctalk" vendorVersion="1.0" preferredSymbol="ddctalk">
+  <dependencies>
+    <dependency name="baja" vendor="Tridium" vendorVersion="4.15"/>
+    <dependency name="web" vendor="Tridium" vendorVersion="4.15"/>
+    <dependency name="workbench" vendor="Tridium" vendorVersion="4.15"/>
+    <dependency name="bajaui" vendor="Tridium" vendorVersion="4.15"/>
+    <dependency name="hx" vendor="Tridium" vendorVersion="4.15"/>
+    <dependency name="webEditors" vendor="Tridium" vendorVersion="4.15"/>
+    <dependency name="bajaux" vendor="Tridium" vendorVersion="4.15"/>
+    <dependency name="js" vendor="Tridium" vendorVersion="4.15"/>
+    <dependency name="ddctalk" vendor="ddctalk" vendorVersion="1.0"/>
+  </dependencies>
+  <types>
+    <type name="DdctalkNavProfile" class="com.ddctalk.ddctalk.ui.BDdctalkNavProfile"/>
+  </types>
+</module>

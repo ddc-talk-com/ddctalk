@@ -14,7 +14,7 @@ const TEST_FILES = [
   'srcTest/rc/**/*.js'
 ];
 const JS_FILES = SRC_FILES.concat(TEST_FILES);
-const ALL_FILES = JS_FILES.concat('src/rc/**/*.less');
+const ALL_FILES = JS_FILES.concat(['src/rc/**/*.less', 'src/rc/**/*.html']);
 
 module.exports = function runGrunt(grunt) {
 
@@ -43,7 +43,7 @@ module.exports = function runGrunt(grunt) {
     },
     watch: {
       src: ALL_FILES,
-      tasks: (tasks) => [ 'less' ].concat(tasks)
+      tasks: (tasks) => [ 'less', 'copy' ].concat(tasks)
       
     },
     less: {
@@ -64,6 +64,14 @@ module.exports = function runGrunt(grunt) {
         }
       }
     },
+    copy: {
+      html: {
+        expand: true,
+        cwd: 'src/',
+        src: ['rc/**/*.html'],
+        dest: 'build/src/'
+      }
+    },
     karma: {},
     requirejs: {},
     niagara: {
@@ -77,5 +85,6 @@ module.exports = function runGrunt(grunt) {
 
   loadTasksRelative(grunt, 'grunt-niagara');
   loadTasksRelative(grunt, 'grunt-contrib-less');
+  loadTasksRelative(grunt, 'grunt-contrib-copy');
     
 };

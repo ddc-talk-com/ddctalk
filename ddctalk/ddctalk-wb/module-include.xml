@@ -1,0 +1,4 @@
+<types>
+  <!--com.ddctalk.ddctalk.ui-->
+  <type class="com.ddctalk.ddctalk.ui.BDdctalkNavProfile" name="DdctalkNavProfile"/>
+</types>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="ddctalk-wb" bajaVersion="0" vendor="ddctalk" vendorVersion="1.0" description="ddctalk workbench module" preferredSymbol="ddct" nre="true" autoload="true" installable="true" buildMillis="%%BUILD_MILLIS%%" buildHost="ELCON87224" moduleName="ddctalk" runtimeProfile="wb">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.15"/>
+  <dependency name="bajaui-wb" vendor="Tridium" vendorVersion="4.15"/>
+  <dependency name="bajaux-ux" vendor="Tridium" vendorVersion="4.15"/>
+  <dependency name="hx-wb" vendor="Tridium" vendorVersion="4.15"/>
+  <dependency name="js-ux" vendor="Tridium" vendorVersion="4.15"/>
+  <dependency name="web-rt" vendor="Tridium" vendorVersion="4.15"/>
+  <dependency name="webEditors-ux" vendor="Tridium" vendorVersion="4.15"/>
+  <dependency name="workbench-wb" vendor="Tridium" vendorVersion="4.15"/>
+  <dependency name="ddctalk-rt" vendor="ddctalk" vendorVersion="1.0"/>
+ </dependencies>
+ <dirs/>
+ <installation/>
+ <types>
+  <type class="com.ddctalk.ddctalk.ui.BDdctalkNavProfile" name="DdctalkNavProfile"/>
+ </types>
+</module>

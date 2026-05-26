@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bajadoc version="2.0" createdBy="niagara-baja-doclet-1.0.9" createdAt="25-maj-2026" createdOn="ELCON87224">
+<module name="ddctalk" runtimeProfile="wb" bajaVersion="0" vendor="ddctalk" vendorVersion="1.0">
+<description>ddctalk workbench module</description>
+<package name="com.ddctalk.ddctalk.ui"/>
+<class packageName="com.ddctalk.ddctalk.ui" name="BDdctalkNavProfile"><description>Custom HTML5 Hx profile for ddctalk navigation.</description></class>
+</module>
+</bajadoc>

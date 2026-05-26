@@ -1,7 +1,7 @@
 <types>
   <!--com.ddctalk.ddctalk.ux-->
-  <type class="com.ddctalk.ddctalk.ux.BDummyWidget" name="DummyWidget"/>
   <type class="com.ddctalk.ddctalk.ux.BDdctalkJsBuild" name="DdctalkJsBuild"/>
   <type class="com.ddctalk.ddctalk.ux.BDdctalkCssResource" name="DdctalkCssResource"/>
   <type class="com.ddctalk.ddctalk.ux.BSliderWidget" name="SliderWidget"/>
+  <type class="com.ddctalk.ddctalk.ux.BDdctalkNav" name="DdctalkNav"/>
 </types>

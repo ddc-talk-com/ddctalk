@@ -19,8 +19,8 @@ public final class BSliderWidget
 {
 //region /*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
 //@formatter:off
-/*@ $com.ddctalk.ddctalk.ux.BDummyWidget(2747097003)1.0$ @*/
-/* Generated Tue Apr 01 20:15:45 CEST 2025 by Slot-o-Matic (c) Tridium, Inc. 2012-2025 */
+/*@ $com.ddctalk.ddctalk.ux.BSliderWidget(2747097003)1.0$ @*/
+/* Generated Mon May 11 11:20:44 CEST 2026 by Slot-o-Matic (c) Tridium, Inc. 2012-2026 */
 
   public static final BSliderWidget INSTANCE = new BSliderWidget();
 

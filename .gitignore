@@ -1,5 +1,7 @@
 .gradle/
 .idea/
+docs/
+niagara-lookup/
 ddctalk/ddctalk-rt/build/
 ddctalk/ddctalk-rt/bin/
 ddctalk/ddctalk-ux/build/

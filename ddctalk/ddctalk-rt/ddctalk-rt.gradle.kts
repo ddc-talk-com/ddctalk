@@ -48,6 +48,7 @@ dependencies {
 
   // Niagara module dependencies
   api(":baja")
+  api(":web-rt")
 
   // Test Niagara module dependencies
   moduleTestImplementation(":test-wb")

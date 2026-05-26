@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ddctalk Navigation</title>
+
+    <script type="text/javascript">
+        var require = {
+            paths: {
+                "nmodule": "/module",
+                "baja": "/module/bajaScript/rc/plugin/baja",
+                "bajaScript": "/module/bajaScript/rc",
+                "bajaux": "/module/bajaux/rc",
+                "lex": "/module/js/rc/lex/lexplugin",
+                "log": "/module/js/rc/log/logPlugin",
+                "css": "/module/js/com/tridium/js/ext/require/css",
+
+                "jquery": "/module/js/rc/jquery/jquery",
+                "Promise": "/module/js/rc/bluebird/bluebird",
+                "underscore": "/module/js/rc/underscore/underscore"
+            }
+        };
+
+        // Dynamically inject stylesheet to avoid Niagara FileDownloadView URL rewrite
+        var cssLink = document.createElement("link");
+        cssLink.rel = "stylesheet";
+        cssLink.id = "stylesheet";
+        cssLink.href = "/module/ddctalk/rc/ddctalk.css";
+        document.head.appendChild(cssLink);
+
+        // Dynamically inject require.js
+        var reqScript = document.createElement("script");
+        reqScript.type = "text/javascript";
+        reqScript.src = "/module/js/com/tridium/js/ext/require/require.min.js";
+        reqScript.setAttribute("data-main", "/module/ddctalk/rc/ddctalkNav/ddctalkNav.run");
+        document.head.appendChild(reqScript);
+    </script>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function goForward() {
+            window.history.forward();
+        }
+        function goUp() {
+
+        }
+        function reloadCurrentPage() {
+            window.location.reload();
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebarNav">
+            <div class="logo-area">
+                <i class="ph-fill ph-infinity logo-icon"></i>
+                <h1 id="logoText">ddc<span class="highlight">talkkkk</span></h1>
+            </div>
+
+            <div class="sidebar-scroll">
+                <ul id="navTreeRoot" class="nav-tree">
+                    <!-- Nav tree injected here -->
+                    <li class="nav-item loading-skeleton">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <i class="ph ph-spinner-gap node-icon" style="animation: spin 1s linear infinite;"></i>
+                            Loading...
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar"><i class="ph ph-user"></i></div>
+                    <div class="user-info-text">
+                        <span class="user-name" id="userInfo">Loading...</span>
+                        <span class="user-role" id="userRole">User</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Top Header (Glassmorphic) -->
+            <header class="top-header" id="appHeader">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menuToggle"><i class="ph ph-list"></i></button>
+                    <div class="page-title" id="pageTitle">Dashboard</div>
+                </div>
+
+                <div class="header-right">
+                    <div class="header-info" id="headerValues">
+                        <!-- Dynamic info loaded here -->
+                    </div>
+
+                    <div class="header-actions">
+                        <button class="action-btn" title="Refresh"
+                            onclick="document.getElementById('mainFrame').contentWindow.location.reload();">
+                            <i class="ph ph-arrows-clockwise"></i>
+                        </button>
+                        <button class="action-btn" title="Settings">
+                            <i class="ph ph-gear"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- iframe Container -->
+            <main class="iframe-container">
+                <iframe name="mainFrame" id="mainFrame" src="https://localhost/ord?spy:" frameborder="0"></iframe>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

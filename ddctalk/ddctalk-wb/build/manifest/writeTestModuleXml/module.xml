@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="ddctalk-wbTest" bajaVersion="0" vendor="ddctalk" vendorVersion="1.0" description="Tests for module ddctalk-wb" preferredSymbol="ddct" nre="true" autoload="true" installable="true" buildMillis="%%BUILD_MILLIS%%" buildHost="ELCON87224" moduleName="ddctalkTest" runtimeProfile="wb">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.15"/>
+  <dependency name="bajaui-wb" vendor="Tridium" vendorVersion="4.15"/>
+  <dependency name="bajaux-ux" vendor="Tridium" vendorVersion="4.15"/>
+  <dependency name="hx-wb" vendor="Tridium" vendorVersion="4.15"/>
+  <dependency name="js-ux" vendor="Tridium" vendorVersion="4.15"/>
+  <dependency name="web-rt" vendor="Tridium" vendorVersion="4.15"/>
+  <dependency name="webEditors-ux" vendor="Tridium" vendorVersion="4.15"/>
+  <dependency name="workbench-wb" vendor="Tridium" vendorVersion="4.15"/>
+  <dependency name="ddctalk-rt" vendor="ddctalk" vendorVersion="1.0"/>
+  <dependency name="ddctalk-wb" vendor="ddctalk" vendorVersion="1.0"/>
+ </dependencies>
+ <dirs/>
+ <installation/>
+</module>

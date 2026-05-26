@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bajadoc version="2.0" createdBy="niagara-baja-doclet-1.0.9" createdAt="25-maj-2026" createdOn="ELCON87224">
+<class module="ddctalk" runtimeProfile="wb" qualifiedName="com.ddctalk.ddctalk.ui.BDdctalkNavProfile" name="BDdctalkNavProfile" packageName="com.ddctalk.ddctalk.ui" public="true">
+<description>
+Custom HTML5 Hx profile for ddctalk navigation.&#xa; Extends BHTML5HxProfile to support modern Px views correctly.
+</description>
+<extends>
+<type class="com.tridium.hx.BHTML5HxProfile"/>
+</extends>
+<annotation><type class="javax.baja.nre.annotations.NiagaraSingleton"/>
+</annotation>
+<!-- com.ddctalk.ddctalk.ui.BDdctalkNavProfile() -->
+<constructor name="BDdctalkNavProfile" protected="true">
+<description/>
+</constructor>
+
+<!-- com.ddctalk.ddctalk.ui.BDdctalkNavProfile.getType() -->
+<method name="getType"  public="true">
+<annotation><type class="java.lang.Override"/>
+</annotation>
+<description/>
+<return>
+<type class="javax.baja.sys.Type"/>
+</return>
+</method>
+
+<!-- com.ddctalk.ddctalk.ui.BDdctalkNavProfile.writeDocument(javax.baja.hx.BHxView, javax.baja.hx.HxOp) -->
+<method name="writeDocument"  public="true">
+<annotation><type class="java.lang.Override"/>
+</annotation>
+<description/>
+<parameter name="view">
+<type class="javax.baja.hx.BHxView"/>
+</parameter>
+<parameter name="op">
+<type class="javax.baja.hx.HxOp"/>
+</parameter>
+<return>
+<type class="void"/>
+</return>
+<throws>
+<type class="java.lang.Exception"/>
+</throws>
+</method>
+
+<!-- com.ddctalk.ddctalk.ui.BDdctalkNavProfile.getConfig(java.lang.String) -->
+<method name="getConfig"  public="true">
+<annotation><type class="java.lang.Override"/>
+</annotation>
+<description/>
+<parameter name="key">
+<type class="java.lang.String"/>
+</parameter>
+<return>
+<type class="javax.baja.sys.BValue"/>
+</return>
+</method>
+
+<!-- com.ddctalk.ddctalk.ui.BDdctalkNavProfile.INSTANCE -->
+<field name="INSTANCE"  public="true" static="true" final="true">
+<type class="com.ddctalk.ddctalk.ui.BDdctalkNavProfile"/>
+<description/>
+</field>
+
+<!-- com.ddctalk.ddctalk.ui.BDdctalkNavProfile.TYPE -->
+<field name="TYPE"  public="true" static="true" final="true">
+<type class="javax.baja.sys.Type"/>
+<description/>
+</field>
+
+</class>
+</bajadoc>

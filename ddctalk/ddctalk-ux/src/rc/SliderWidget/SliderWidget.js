@@ -3,7 +3,7 @@
  *
  * @module nmodule/ddctalk/rc/SliderWidget
  */
-define([ 
+define([
   'baja!',
   'bajaux/Widget',
   'bajaux/mixin/subscriberMixIn',
@@ -11,12 +11,12 @@ define([
   'log!nmodule/ddctalk/rc/SliderWidget/SliderWidget',
   'baja!baja:StatusNumeric'
 ], function (
-    baja,
-    Widget, 
-    subscriberMixIn,
-    RangeSliderJs,
-    log
-  ) {
+  baja,
+  Widget,
+  subscriberMixIn,
+  RangeSliderJs,
+  log
+) {
 
   'use strict';
 
@@ -26,6 +26,8 @@ define([
   /**
    * A class representing a slider widget that renders and interacts with a range slider control.
    * Uses rangeslider.js library to create interactive sliders for Niagara platforms.
+   * 
+   * THIS WIDGET IS NOT USED IN ANY APPLICATION. IT WAS CREATED FOR TESTING PURPOSES AND CAN BE DELETED.
    *
    * @class SliderWidget
    * @extends Widget
@@ -91,7 +93,7 @@ define([
       `);
 
       dom.css({
-        'background-color': 'transparent'
+        'background-color': 'transparent',
       });
 
       // Add specific styling for vertical orientation
@@ -120,10 +122,10 @@ define([
       const max = this.$getMax();
       const step = this.properties().getValue('rsStep');
       const isHorizontal = this.properties().getValue('rsHorizontal');
-    
+
       // Store the latest value during dragging, but don't send it yet
       let currentValue = null;
-    
+
       this.$slider
         .rangeslider({
           polyfill: false,
@@ -137,7 +139,7 @@ define([
           verticalClass: 'rangeslider--vertical',
           enabledClass: 'rangeslider--enabled',
           disabledClass: 'rangeslider--disabled',
-        
+
           /**
            * Callback for slider drag events.
            * Stores the current value but doesn't commit it until drag ends.
@@ -145,12 +147,12 @@ define([
            * @param {number} position - The slider position
            * @param {number} sValue - The slider value
            */
-          onSlide: function(position, sValue) {
+          onSlide: function (position, sValue) {
             // Just store the value during sliding, but don't commit yet
             currentValue = sValue;
             logInfo('Slider sliding to: ' + sValue + ' (not committed yet)');
           },
-          
+
           /**
            * Callback for slider drag end events.
            * Commits the final value to the bound Niagara point.
@@ -158,9 +160,9 @@ define([
            * @param {number} position - The slider position
            * @param {number} sValue - The final slider value
            */
-          onSlideEnd: function(position, sValue) {
+          onSlideEnd: function (position, sValue) {
             // When sliding ends (mouse up), actually commit the value
-            const sliderValue = baja.$('baja:StatusNumeric', { 
+            const sliderValue = baja.$('baja:StatusNumeric', {
               status: baja.Status.alarm,
               value: parseFloat(sValue)
             });
@@ -168,13 +170,13 @@ define([
             value.setFallback(sliderValue);
           }
         });
-        
+
       // Fix vertical slider sizing after initialization
       // if (!isHorizontal) {
       //   // Apply these styles after the slider is created
       //   const $container = this.jq().find('.sliderWidget-container');
       //   const containerHeight = $container.height();
-        
+
       //   // Make the rangeslider element match the container height
       //   // this.jq().find('.rangeslider--vertical').css({
       //   //   'height': '100%'
@@ -210,7 +212,7 @@ define([
       logInfo('SliderWidget.$updateDom() called.');
 
       const newValue = value.getOut().getValue();
-      
+
       // Add error handling here
       try {
         // Update the slider value (using the jQuery plugin pattern)
