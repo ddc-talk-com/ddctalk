@@ -36,7 +36,7 @@ define([
                 let newUrl = currentUrl.substring(0, index);
 
                 console.log("Modified Url: ", newUrl);
-                return newUrl + "ord/";
+                return newUrl;
             } else {
                 console.error("Cutoff not found in URL");
                 return null;
@@ -49,15 +49,14 @@ define([
 
         ddctalkNavApp.initApp = async function () {
             try {
-                const mainFrame = document.getElementById('mainFrame');
-                console.log(mainFrame.src);
+                // const mainFrame = document.getElementById('mainFrame');
+                // console.log(mainFrame.src);
                 // if (mainFrame) {
                 //     mainFrame.src = toOrdUrl(mainFrame.src + '?|view:') + '?fullScreen=true';
                 // }
 
                 // 1. Get current user
                 const user = baja.getUserName();
-                // let user = "Dakota Skye"
                 if (user) {
                     const userInfo = document.getElementById('userInfo');
                     if (userInfo) userInfo.textContent = user;
@@ -65,7 +64,11 @@ define([
 
                 function update(user) {
                     console.log("UPDATE FUNCTION");
-                    console.log("User: ", user);
+                    console.log(user);
+                    console.log(user.getNavFile().relativizeToSession());
+                    console.log(ddctalkNavApp.SESSION_URL + user.getNavFile().toUri());
+                    console.log(ddctalkNavApp.SESSION_URL);
+                    // mainFrame.src = ddctalkNavApp.SESSION_URL + user.getNavFile().toUri() + ddctalkNavApp.FULLSCREEN;
                     if (user.get("fullName") === "") {
                         $("#userInfo").text(user);
                     } else {

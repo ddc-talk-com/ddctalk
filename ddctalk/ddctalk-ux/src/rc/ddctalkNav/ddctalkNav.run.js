@@ -10,7 +10,7 @@ require([
         console.log("Starting ddctalkNav.");
         $(document).ready(function () {
             console.log("Document ready.");
-            ddctalkNavApp.SESSION_URL = ddctalkNavApp.getUrl("module/");
+            ddctalkNavApp.SESSION_URL = ddctalkNavApp.getUrl("/module/");
             ddctalkNavApp.DOMAIN = ddctalkNavApp.getUrl("module/");
 
             baja.started(function () {
